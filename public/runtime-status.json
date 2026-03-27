@@ -1,0 +1,268 @@
+{
+  "updatedAt": "2026-03-27T19:52:44.641Z",
+  "source": "runtime-status-poller",
+  "statuses": {
+    "plex": {
+      "state": "online",
+      "detail": "HTTP 200 in 9ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 2.8,
+        "memPct": 0
+      }
+    },
+    "sonarr": {
+      "state": "online",
+      "detail": "HTTP 200 in 13ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 3.3,
+        "memPct": 0
+      }
+    },
+    "radarr": {
+      "state": "online",
+      "detail": "HTTP 200 in 7ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 3.1,
+        "memPct": 0
+      }
+    },
+    "lidarr": {
+      "state": "offline",
+      "detail": "Health check failed: fetch failed",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    },
+    "prowlarr": {
+      "state": "online",
+      "detail": "HTTP 200 in 12ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 3.1,
+        "memPct": 0
+      }
+    },
+    "sabnzbd": {
+      "state": "online",
+      "detail": "HTTP 200 in 45ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "updateAvailable": true,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 2,
+        "memPct": 0
+      }
+    },
+    "seerr": {
+      "state": "online",
+      "detail": "HTTP 200 in 73ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 1.9,
+        "memPct": 0
+      }
+    },
+    "tdarr": {
+      "state": "online",
+      "detail": "HTTP 200 in 13ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 24.3,
+        "memPct": 0
+      }
+    },
+    "kometa": {
+      "state": "degraded",
+      "detail": "HTTP 503 in 12ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 0.1,
+        "memPct": 0
+      }
+    },
+    "ersatztv": {
+      "state": "degraded",
+      "detail": "HTTP 503 in 12ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 3.2,
+        "memPct": 0
+      }
+    },
+    "tautulli": {
+      "state": "online",
+      "detail": "HTTP 200 in 17ms",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    },
+    "unraid-host": {
+      "state": "degraded",
+      "detail": "HTTP 503 in 11ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 27.3,
+        "memPct": 41
+      }
+    },
+    "proxmox-host": {
+      "state": "unknown",
+      "detail": "HTTP check disabled",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    },
+    "glances": {
+      "state": "online",
+      "detail": "HTTP 200 in 349ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 5.9,
+        "memPct": 0
+      }
+    },
+    "fleetmanager": {
+      "state": "offline",
+      "detail": "Health check failed: fetch failed",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false,
+      "updateAvailable": true
+    },
+    "cloudflared": {
+      "state": "online",
+      "detail": "HTTP 404 in 7ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 13.8,
+        "memPct": 0
+      }
+    },
+    "qdirstat": {
+      "state": "offline",
+      "detail": "Health check failed: fetch failed",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    },
+    "nginxproxymanager": {
+      "state": "online",
+      "detail": "HTTP 200 in 7ms",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    },
+    "openwebui": {
+      "state": "online",
+      "detail": "HTTP 200 in 22ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "updateAvailable": true,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 7.3,
+        "memPct": 0
+      }
+    },
+    "openai-lxc": {
+      "state": "unknown",
+      "detail": "HTTP check disabled",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    },
+    "mealie": {
+      "state": "online",
+      "detail": "HTTP 200 in 11ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 7.3,
+        "memPct": 0
+      }
+    },
+    "weatherstar": {
+      "state": "online",
+      "detail": "HTTP 200 in 8ms",
+      "sourceSummary": "http+glances",
+      "confidencePct": 93,
+      "stale": false,
+      "updateAvailable": true,
+      "metrics": {
+        "netInMbps": 0,
+        "netOutMbps": 0,
+        "cpuPct": 0,
+        "memPct": 0
+      }
+    },
+    "valheim": {
+      "state": "unknown",
+      "detail": "HTTP check disabled",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    },
+    "homeassistant-os": {
+      "state": "online",
+      "detail": "HTTP 200 in 7ms",
+      "sourceSummary": "http",
+      "confidencePct": 62,
+      "stale": false
+    }
+  }
+}

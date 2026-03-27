@@ -3,112 +3,196 @@
     {
       "id": "media",
       "title": "Media",
-      "description": "Streaming, acquisition, and media management.",
+      "description": "Streaming, automation, and media processing.",
       "services": [
         {
-          "id": "jellyfin",
-          "name": "Jellyfin",
-          "description": "Self-hosted media server.",
+          "id": "plex",
+          "name": "Plex Media Server",
+          "description": "Primary media streaming server.",
           "icon": "🎬",
-          "link": "https://jellyfin.local"
+          "link": "http://192.168.1.22:32400/web"
         },
         {
           "id": "sonarr",
           "name": "Sonarr",
-          "description": "TV automation and management.",
+          "description": "TV series automation and management.",
           "icon": "📺",
-          "link": "https://sonarr.local"
+          "link": "http://192.168.1.22:8989"
         },
         {
           "id": "radarr",
           "name": "Radarr",
           "description": "Movie automation and indexing.",
           "icon": "🎞️",
-          "link": "https://radarr.local"
+          "link": "http://192.168.1.22:7878"
+        },
+        {
+          "id": "lidarr",
+          "name": "Lidarr",
+          "description": "Music collection automation.",
+          "icon": "🎵",
+          "link": "http://192.168.1.22:8686"
+        },
+        {
+          "id": "prowlarr",
+          "name": "Prowlarr",
+          "description": "Indexer manager for arr apps.",
+          "icon": "🧭",
+          "link": "http://192.168.1.22:9696"
+        },
+        {
+          "id": "sabnzbd",
+          "name": "SABnzbd",
+          "description": "Usenet downloader and queue manager.",
+          "icon": "📥",
+          "link": "http://192.168.1.22:8282"
+        },
+        {
+          "id": "seerr",
+          "name": "Seerr",
+          "description": "Media requests and approvals.",
+          "icon": "📝",
+          "link": "http://192.168.1.22:5055"
+        },
+        {
+          "id": "tdarr",
+          "name": "Tdarr",
+          "description": "Distributed transcode automation.",
+          "icon": "🛠️",
+          "link": "http://192.168.1.22:8265"
+        },
+        {
+          "id": "kometa",
+          "name": "Kometa",
+          "description": "Plex metadata and collection automation.",
+          "icon": "🗂️",
+          "link": "http://192.168.1.22"
+        },
+        {
+          "id": "ersatztv",
+          "name": "ErsatzTV",
+          "description": "Pseudo-live channels for media libraries.",
+          "icon": "📡",
+          "link": "http://192.168.1.22"
+        },
+        {
+          "id": "tautulli",
+          "name": "Tautulli",
+          "description": "Plex analytics and monitoring.",
+          "icon": "📊",
+          "link": "http://192.168.1.245:8181"
         }
       ]
     },
     {
       "id": "infra",
       "title": "Infra",
-      "description": "Core infrastructure and orchestration tools.",
+      "description": "System operations and infrastructure tooling.",
       "services": [
         {
-          "id": "proxmox",
-          "name": "Proxmox",
-          "description": "Virtualization and cluster management.",
+          "id": "unraid-host",
+          "name": "Unraid Host",
+          "description": "Physical host performance and network throughput.",
           "icon": "🖥️",
-          "link": "https://proxmox.local"
+          "link": "http://192.168.1.22"
         },
         {
-          "id": "portainer",
-          "name": "Portainer",
-          "description": "Container visibility and operations.",
-          "icon": "🐳",
-          "link": "https://portainer.local"
+          "id": "proxmox-host",
+          "name": "Proxmox Node",
+          "description": "Proxmox node health and resource utilization.",
+          "icon": "🧱",
+          "link": "https://proxmox.your.lan:8006"
         },
         {
-          "id": "pihole",
-          "name": "Pi-hole",
-          "description": "Network-wide DNS ad-blocking.",
-          "icon": "🛡️",
-          "link": "https://pihole.local"
+          "id": "glances",
+          "name": "Glances",
+          "description": "Host and container metrics dashboard.",
+          "icon": "📈",
+          "link": "http://192.168.1.22:61208"
+        },
+        {
+          "id": "fleetmanager",
+          "name": "FleetManager",
+          "description": "Containerized fleet administration.",
+          "icon": "🧰",
+          "link": "https://192.168.1.22:1443"
+        },
+        {
+          "id": "cloudflared",
+          "name": "Unraid Cloudflared Tunnel",
+          "description": "Cloudflare tunnel connector service.",
+          "icon": "☁️",
+          "link": "http://192.168.1.22:46495"
+        },
+        {
+          "id": "qdirstat",
+          "name": "QDirStat",
+          "description": "Storage usage and cleanup visualizer.",
+          "icon": "🗄️",
+          "link": "http://192.168.1.22:7815"
+        },
+        {
+          "id": "nginxproxymanager",
+          "name": "Nginx Proxy Manager",
+          "description": "Reverse proxy and SSL management.",
+          "icon": "🌐",
+          "link": "http://192.168.1.93:81"
         }
       ]
     },
     {
       "id": "security",
-      "title": "Security",
-      "description": "Identity, secrets, and threat controls.",
+      "title": "Security & Access",
+      "description": "Secure access and tunnel endpoints.",
       "services": [
         {
-          "id": "vaultwarden",
-          "name": "Vaultwarden",
-          "description": "Password vault for teams and family.",
-          "icon": "🔐",
-          "link": "https://vaultwarden.local"
+          "id": "openwebui",
+          "name": "Open WebUI",
+          "description": "Local LLM web interface.",
+          "icon": "🤖",
+          "link": "http://192.168.1.22:6969"
         },
         {
-          "id": "authelia",
-          "name": "Authelia",
-          "description": "SSO and multi-factor access.",
-          "icon": "🧩",
-          "link": "https://authelia.local"
-        },
-        {
-          "id": "crowdsec",
-          "name": "CrowdSec",
-          "description": "Collaborative intrusion prevention.",
-          "icon": "🚨",
-          "link": "https://crowdsec.local"
+          "id": "openai-lxc",
+          "name": "OpenAI LXC",
+          "description": "LLM services container on Proxmox.",
+          "icon": "🧠",
+          "link": "http://192.168.1.99"
         }
       ]
     },
     {
       "id": "utilities",
       "title": "Utilities",
-      "description": "Quality of life and helper services.",
+      "description": "Tools, games, and helper apps.",
       "services": [
         {
-          "id": "uptimekuma",
-          "name": "Uptime Kuma",
-          "description": "Status monitoring and alerts.",
-          "icon": "📈",
-          "link": "https://uptime.local"
+          "id": "mealie",
+          "name": "Mealie",
+          "description": "Recipe manager and meal planner.",
+          "icon": "🍽️",
+          "link": "http://192.168.1.22:3005"
         },
         {
-          "id": "homepage",
-          "name": "Homepage",
-          "description": "Alternative service launcher.",
-          "icon": "🏠",
-          "link": "https://homepage.local"
+          "id": "weatherstar",
+          "name": "WeatherStar",
+          "description": "Weather display dashboard.",
+          "icon": "🌤️",
+          "link": "http://192.168.1.22:8675"
         },
         {
-          "id": "whoami",
-          "name": "WhoAmI",
-          "description": "Diagnostic endpoint.",
-          "icon": "🧪",
-          "link": "https://whoami.local"
+          "id": "valheim",
+          "name": "Valheim Server",
+          "description": "Dedicated game server.",
+          "icon": "🛡️",
+          "link": "http://192.168.1.22:2456"
+        },
+        {
+          "id": "homeassistant-os",
+          "name": "Home Assistant OS",
+          "description": "Smart home automation platform.",
+          "icon": "🏡",
+          "link": "http://192.168.1.231:8123"
         }
       ]
     }

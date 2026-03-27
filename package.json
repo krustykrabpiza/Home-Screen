@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "status:poll": "node scripts/runtime-status-poller.mjs",
+    "status:once": "node scripts/runtime-status-poller.mjs --once",
     "build": "vite build",
     "preview": "vite preview"
   },

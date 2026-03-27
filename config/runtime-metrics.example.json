@@ -1,0 +1,64 @@
+{
+  "pollIntervalMs": 15000,
+  "requestTimeoutMs": 3500,
+  "healthChecks": {
+    "defaults": {
+      "method": "GET",
+      "timeoutMs": 3500,
+      "treat3xxAsOnline": true
+    },
+    "services": {
+      "cloudflared": {
+        "expectedStatusCodes": [404]
+      },
+      "valheim": {
+        "enabled": false
+      }
+    }
+  },
+  "updateOverrides": {
+    "openwebui": true,
+    "sabnzbd": true,
+    "weatherstar": true
+  },
+  "glances": {
+    "baseUrl": "http://192.168.1.22:61208",
+    "hostServiceId": "unraid-host",
+    "containers": {
+      "plex": "Plex-Media-Server",
+      "sonarr": "sonarr",
+      "radarr": "radarr",
+      "prowlarr": "prowlarr",
+      "sabnzbd": "sabnzbd",
+      "seerr": "Seerr",
+      "tdarr": "tdarr",
+      "openwebui": "open-webui"
+    }
+  },
+  "proxmox": {
+    "baseUrl": "https://proxmox.your.lan:8006",
+    "node": "jacksparrow",
+    "tokenId": "root@pam!home-screen",
+    "tokenSecret": "replace-me",
+    "ignoreTlsErrors": true,
+    "nodeServiceId": "proxmox-host",
+    "services": {
+      "homeassistant-os": {
+        "type": "qemu",
+        "vmid": 106
+      },
+      "tautulli": {
+        "type": "lxc",
+        "vmid": 101
+      },
+      "openai-lxc": {
+        "type": "lxc",
+        "vmid": 102
+      },
+      "nginxproxymanager": {
+        "type": "lxc",
+        "vmid": 105
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@
   --muted: #95a2be;
   --border: #263047;
   --online: #22c55e;
+  --update: #a855f7;
   --degraded: #f59e0b;
   --offline: #ef4444;
   --unknown: #64748b;
@@ -147,6 +148,19 @@ body {
   font-size: 0.78rem;
 }
 
+.service-metrics {
+  margin: 0.45rem 0 0;
+  color: #afc0df;
+  font-size: 0.73rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.service-meta {
+  margin: 0.3rem 0 0;
+  color: #8ea4cc;
+  font-size: 0.7rem;
+}
+
 .status-pill {
   display: inline-flex;
   align-items: center;
@@ -173,6 +187,16 @@ body {
 
 .status-online .status-dot {
   background: var(--online);
+}
+
+.status-update {
+  color: #e8ccff;
+  border-color: #613087;
+  background: rgba(168, 85, 247, 0.16);
+}
+
+.status-update .status-dot {
+  background: var(--update);
 }
 
 .status-degraded {

@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Section from "./components/Section";
 import { mockStatusById } from "./data/mockStatus";
 
 export default function App() {
   const [sections, setSections] = useState([]);
   const [loadError, setLoadError] = useState("");
+  const [runtimeStatuses, setRuntimeStatuses] = useState({});
 
   useEffect(() => {
     const loadConfig = async () => {
@@ -22,6 +23,54 @@ export default function App() {
 
     loadConfig();
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadRuntimeStatus = async () => {
+      try {
+        const response = await fetch(`/runtime-status.json?ts=${Date.now()}`);
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+        if (!cancelled) {
+          setRuntimeStatuses(data.statuses ?? {});
+        }
+      } catch {
+        if (!cancelled) {
+          setRuntimeStatuses({});
+        }
+      }
+    };
+
+    loadRuntimeStatus();
+    const timerId = setInterval(loadRuntimeStatus, 15000);
+
+    return () => {
+      cancelled = true;
+      clearInterval(timerId);
+    };
+  }, []);
+
+  const mergedStatuses = useMemo(() => {
+    const merged = { ...mockStatusById };
+
+    for (const [serviceId, runtimeStatus] of Object.entries(runtimeStatuses)) {
+      const base = merged[serviceId] ?? {};
+      merged[serviceId] = {
+        ...base,
+        ...runtimeStatus,
+        metrics: {
+          ...(base.metrics ?? {}),
+          ...(runtimeStatus.metrics ?? {}),
+        },
+      };
+    }
+
+    return merged;
+  }, [runtimeStatuses]);
 
   return (
     <main className="app-shell">
@@ -41,7 +90,7 @@ export default function App() {
 
       <div className="sections-wrap">
         {sections.map((section) => (
-          <Section key={section.id} section={section} statuses={mockStatusById} />
+          <Section key={section.id} section={section} statuses={mergedStatuses} />
         ))}
       </div>
     </main>
