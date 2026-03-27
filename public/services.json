@@ -13,6 +13,13 @@
           "link": "http://192.168.1.22:32400/web"
         },
         {
+          "id": "ersatztv",
+          "name": "ErsatzTV",
+          "description": "Pseudo-live channels for media libraries.",
+          "icon": "📡",
+          "link": "http://192.168.1.22"
+        },
+        {
           "id": "sonarr",
           "name": "Sonarr",
           "description": "TV series automation and management.",
@@ -69,13 +76,6 @@
           "link": "http://192.168.1.22"
         },
         {
-          "id": "ersatztv",
-          "name": "ErsatzTV",
-          "description": "Pseudo-live channels for media libraries.",
-          "icon": "📡",
-          "link": "http://192.168.1.22"
-        },
-        {
           "id": "tautulli",
           "name": "Tautulli",
           "description": "Plex analytics and monitoring.",
@@ -118,18 +118,32 @@
           "link": "https://192.168.1.22:1443"
         },
         {
-          "id": "cloudflared",
-          "name": "Unraid Cloudflared Tunnel",
-          "description": "Cloudflare tunnel connector service.",
-          "icon": "☁️",
-          "link": "http://192.168.1.22:46495"
-        },
-        {
           "id": "qdirstat",
           "name": "QDirStat",
           "description": "Storage usage and cleanup visualizer.",
           "icon": "🗄️",
           "link": "http://192.168.1.22:7815"
+        },
+        {
+          "id": "valheim",
+          "name": "Valheim Server",
+          "description": "Dedicated game server.",
+          "icon": "🛡️",
+          "link": "http://192.168.1.22:2456"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security & Access",
+      "description": "Secure access and tunnel endpoints.",
+      "services": [
+        {
+          "id": "cloudflared",
+          "name": "Unraid Cloudflared Tunnel",
+          "description": "Cloudflare tunnel connector service.",
+          "icon": "☁️",
+          "link": "http://192.168.1.22:46495"
         },
         {
           "id": "nginxproxymanager",
@@ -141,9 +155,9 @@
       ]
     },
     {
-      "id": "security",
-      "title": "Security & Access",
-      "description": "Secure access and tunnel endpoints.",
+      "id": "utilities",
+      "title": "Utilities",
+      "description": "Tools and helper apps.",
       "services": [
         {
           "id": "openwebui",
@@ -158,14 +172,7 @@
           "description": "LLM services container on Proxmox.",
           "icon": "🧠",
           "link": "http://192.168.1.99"
-        }
-      ]
-    },
-    {
-      "id": "utilities",
-      "title": "Utilities",
-      "description": "Tools, games, and helper apps.",
-      "services": [
+        },
         {
           "id": "mealie",
           "name": "Mealie",
@@ -179,13 +186,6 @@
           "description": "Weather display dashboard.",
           "icon": "🌤️",
           "link": "http://192.168.1.22:8675"
-        },
-        {
-          "id": "valheim",
-          "name": "Valheim Server",
-          "description": "Dedicated game server.",
-          "icon": "🛡️",
-          "link": "http://192.168.1.22:2456"
         },
         {
           "id": "homeassistant-os",
