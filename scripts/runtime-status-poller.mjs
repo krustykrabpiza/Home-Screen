@@ -684,8 +684,6 @@ async function main() {
   const config = await readJson(configPath, {});
   const intervalMs = config.pollIntervalMs ?? 15000;
 
-  console.log(`[poller] cwd ${process.cwd()}`);
-  console.log(`[poller] script ${__filename}`);
   console.log(`[poller] writing runtime status to ${runtimeStatusPath}`);
   if (once) {
     await runPoll(config);
