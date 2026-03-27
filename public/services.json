@@ -1,0 +1,116 @@
+{
+  "sections": [
+    {
+      "id": "media",
+      "title": "Media",
+      "description": "Streaming, acquisition, and media management.",
+      "services": [
+        {
+          "id": "jellyfin",
+          "name": "Jellyfin",
+          "description": "Self-hosted media server.",
+          "icon": "🎬",
+          "link": "https://jellyfin.local"
+        },
+        {
+          "id": "sonarr",
+          "name": "Sonarr",
+          "description": "TV automation and management.",
+          "icon": "📺",
+          "link": "https://sonarr.local"
+        },
+        {
+          "id": "radarr",
+          "name": "Radarr",
+          "description": "Movie automation and indexing.",
+          "icon": "🎞️",
+          "link": "https://radarr.local"
+        }
+      ]
+    },
+    {
+      "id": "infra",
+      "title": "Infra",
+      "description": "Core infrastructure and orchestration tools.",
+      "services": [
+        {
+          "id": "proxmox",
+          "name": "Proxmox",
+          "description": "Virtualization and cluster management.",
+          "icon": "🖥️",
+          "link": "https://proxmox.local"
+        },
+        {
+          "id": "portainer",
+          "name": "Portainer",
+          "description": "Container visibility and operations.",
+          "icon": "🐳",
+          "link": "https://portainer.local"
+        },
+        {
+          "id": "pihole",
+          "name": "Pi-hole",
+          "description": "Network-wide DNS ad-blocking.",
+          "icon": "🛡️",
+          "link": "https://pihole.local"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "description": "Identity, secrets, and threat controls.",
+      "services": [
+        {
+          "id": "vaultwarden",
+          "name": "Vaultwarden",
+          "description": "Password vault for teams and family.",
+          "icon": "🔐",
+          "link": "https://vaultwarden.local"
+        },
+        {
+          "id": "authelia",
+          "name": "Authelia",
+          "description": "SSO and multi-factor access.",
+          "icon": "🧩",
+          "link": "https://authelia.local"
+        },
+        {
+          "id": "crowdsec",
+          "name": "CrowdSec",
+          "description": "Collaborative intrusion prevention.",
+          "icon": "🚨",
+          "link": "https://crowdsec.local"
+        }
+      ]
+    },
+    {
+      "id": "utilities",
+      "title": "Utilities",
+      "description": "Quality of life and helper services.",
+      "services": [
+        {
+          "id": "uptimekuma",
+          "name": "Uptime Kuma",
+          "description": "Status monitoring and alerts.",
+          "icon": "📈",
+          "link": "https://uptime.local"
+        },
+        {
+          "id": "homepage",
+          "name": "Homepage",
+          "description": "Alternative service launcher.",
+          "icon": "🏠",
+          "link": "https://homepage.local"
+        },
+        {
+          "id": "whoami",
+          "name": "WhoAmI",
+          "description": "Diagnostic endpoint.",
+          "icon": "🧪",
+          "link": "https://whoami.local"
+        }
+      ]
+    }
+  ]
+}
