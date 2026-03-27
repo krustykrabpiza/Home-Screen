@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-03-27T19:56:54.180Z",
+  "updatedAt": "2026-03-27T19:57:28.406Z",
   "source": "runtime-status-poller",
   "statuses": {
     "plex": {
@@ -12,33 +12,33 @@
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 2.6,
+        "cpuPct": 1.2,
         "memPct": 0
       }
     },
     "sonarr": {
       "state": "online",
-      "detail": "HTTP 200 in 13ms",
+      "detail": "HTTP 200 in 12ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 4.7,
+        "cpuPct": 2.4,
         "memPct": 0
       }
     },
     "radarr": {
       "state": "online",
-      "detail": "HTTP 200 in 9ms",
+      "detail": "HTTP 200 in 10ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 5.4,
+        "cpuPct": 3.1,
         "memPct": 0
       }
     },
@@ -58,34 +58,34 @@
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 41.2,
+        "cpuPct": 2.3,
         "memPct": 0
       }
     },
     "sabnzbd": {
       "state": "online",
-      "detail": "HTTP 200 in 40ms",
+      "detail": "HTTP 200 in 29ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "updateAvailable": true,
       "metrics": {
         "netInMbps": 0,
-        "netOutMbps": 0.1,
-        "cpuPct": 1.8,
+        "netOutMbps": 0,
+        "cpuPct": 2.4,
         "memPct": 0
       }
     },
     "seerr": {
       "state": "online",
-      "detail": "HTTP 200 in 93ms",
+      "detail": "HTTP 200 in 64ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 0.1,
+        "cpuPct": 0.5,
         "memPct": 0
       }
     },
@@ -104,7 +104,7 @@
     },
     "kometa": {
       "state": "online",
-      "detail": "HTTP 200 in 22ms",
+      "detail": "HTTP 200 in 26ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
@@ -117,20 +117,20 @@
     },
     "ersatztv": {
       "state": "online",
-      "detail": "HTTP 200 in 28ms",
+      "detail": "HTTP 200 in 26ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 2.4,
+        "cpuPct": 2.6,
         "memPct": 0
       }
     },
     "tautulli": {
       "state": "online",
-      "detail": "HTTP 200 in 17ms",
+      "detail": "HTTP 200 in 16ms",
       "sourceSummary": "http",
       "confidencePct": 62,
       "stale": false
@@ -144,8 +144,8 @@
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 6.9,
-        "memPct": 40.7
+        "cpuPct": 7,
+        "memPct": 40.8
       }
     },
     "proxmox-host": {
@@ -157,14 +157,14 @@
     },
     "glances": {
       "state": "online",
-      "detail": "HTTP 200 in 360ms",
+      "detail": "HTTP 200 in 350ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 31.5,
+        "cpuPct": 25.5,
         "memPct": 0
       }
     },
@@ -178,14 +178,14 @@
     },
     "cloudflared": {
       "state": "online",
-      "detail": "HTTP 404 in 8ms",
+      "detail": "HTTP 404 in 9ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 10.1,
+        "cpuPct": 9,
         "memPct": 0
       }
     },
@@ -205,7 +205,7 @@
     },
     "openwebui": {
       "state": "online",
-      "detail": "HTTP 200 in 9ms",
+      "detail": "HTTP 200 in 10ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
@@ -213,7 +213,7 @@
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 7,
+        "cpuPct": 6.9,
         "memPct": 0
       }
     },
@@ -226,20 +226,20 @@
     },
     "mealie": {
       "state": "online",
-      "detail": "HTTP 200 in 9ms",
+      "detail": "HTTP 200 in 10ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
       "metrics": {
         "netInMbps": 0,
         "netOutMbps": 0,
-        "cpuPct": 6.5,
+        "cpuPct": 6.1,
         "memPct": 0
       }
     },
     "weatherstar": {
       "state": "online",
-      "detail": "HTTP 200 in 7ms",
+      "detail": "HTTP 200 in 8ms",
       "sourceSummary": "http+glances",
       "confidencePct": 93,
       "stale": false,
@@ -260,7 +260,7 @@
     },
     "homeassistant-os": {
       "state": "online",
-      "detail": "HTTP 200 in 8ms",
+      "detail": "HTTP 200 in 9ms",
       "sourceSummary": "http",
       "confidencePct": 62,
       "stale": false
