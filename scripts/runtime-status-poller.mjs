@@ -5,9 +5,14 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..");
-const servicesPath = path.join(projectRoot, "public", "services.json");
-const runtimeStatusPath = path.join(projectRoot, "public", "runtime-status.json");
-const configPath = path.join(projectRoot, "config", "runtime-metrics.local.json");
+const servicesPath =
+  process.env.HOME_SCREEN_SERVICES_PATH || path.join(projectRoot, "public", "services.json");
+const runtimeStatusPath =
+  process.env.HOME_SCREEN_RUNTIME_STATUS_PATH ||
+  path.join(projectRoot, "public", "runtime-status.json");
+const configPath =
+  process.env.HOME_SCREEN_CONFIG_PATH ||
+  path.join(projectRoot, "config", "runtime-metrics.local.json");
 
 const metricTracker = new Map();
 const healthFailureTracker = new Map();

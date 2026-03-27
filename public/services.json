@@ -3,7 +3,7 @@
     {
       "id": "media",
       "title": "Media",
-      "description": "Streaming, automation, and media processing.",
+      "description": "Streaming, requests, downloads, and media processing.",
       "services": [
         {
           "id": "plex",
@@ -87,7 +87,7 @@
     {
       "id": "infra",
       "title": "Infra",
-      "description": "System operations and infrastructure tooling.",
+      "description": "Core host operations and infrastructure tooling.",
       "services": [
         {
           "id": "unraid-host",
@@ -112,7 +112,7 @@
         },
         {
           "id": "fleetmanager",
-          "name": "FleetManager",
+          "name": "Fleet Manager",
           "description": "Containerized fleet administration.",
           "icon": "🧰",
           "link": "https://192.168.1.22:1443"
@@ -123,13 +123,6 @@
           "description": "Storage usage and cleanup visualizer.",
           "icon": "🗄️",
           "link": "http://192.168.1.22:7815"
-        },
-        {
-          "id": "valheim",
-          "name": "Valheim Server",
-          "description": "Dedicated game server.",
-          "icon": "🛡️",
-          "link": "http://192.168.1.22:2456"
         }
       ]
     },
@@ -157,7 +150,7 @@
     {
       "id": "utilities",
       "title": "Utilities",
-      "description": "Tools and helper apps.",
+      "description": "Utilities, AI tools, and quality-of-life services.",
       "services": [
         {
           "id": "openwebui",
@@ -186,6 +179,13 @@
           "description": "Weather display dashboard.",
           "icon": "🌤️",
           "link": "http://192.168.1.22:8675"
+        },
+        {
+          "id": "valheim",
+          "name": "Valheim Server",
+          "description": "Dedicated game server.",
+          "icon": "🛡️",
+          "link": "http://192.168.1.22:2456"
         },
         {
           "id": "homeassistant-os",

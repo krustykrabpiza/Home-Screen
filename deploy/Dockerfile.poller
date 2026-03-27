@@ -1,0 +1,4 @@
+FROM node:18-alpine
+WORKDIR /app
+COPY scripts/runtime-status-poller.mjs ./scripts/runtime-status-poller.mjs
+CMD ["node", "scripts/runtime-status-poller.mjs"]

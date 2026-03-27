@@ -1,0 +1,27 @@
+services:
+  home-screen-web:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.web
+    container_name: home-screen-web
+    ports:
+      - "8088:80"
+    restart: unless-stopped
+    volumes:
+      - ./runtime-status.json:/usr/share/nginx/html/runtime-status.json
+      - ../public/services.json:/usr/share/nginx/html/services.json:ro
+
+  home-screen-poller:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.poller
+    container_name: home-screen-poller
+    restart: unless-stopped
+    environment:
+      HOME_SCREEN_SERVICES_PATH: /data/services.json
+      HOME_SCREEN_RUNTIME_STATUS_PATH: /data/runtime-status.json
+      HOME_SCREEN_CONFIG_PATH: /config/runtime-metrics.local.json
+    volumes:
+      - ./runtime-status.json:/data/runtime-status.json
+      - ../public/services.json:/data/services.json:ro
+      - ../config/runtime-metrics.local.json:/config/runtime-metrics.local.json:ro

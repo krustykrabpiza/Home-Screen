@@ -27,7 +27,7 @@ export default function ServiceCard({ service, status }) {
 
   return (
     <a
-      className="service-card"
+      className={`service-card card-state-${effectiveState ?? "unknown"}`}
       href={service.link}
       target="_blank"
       rel="noreferrer"
